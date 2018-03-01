@@ -11,6 +11,7 @@ def start_bot(bot, update):
 	print(update)
 	bottext="""Привет, {}!
 Я бот Даши и понимаю простые команды. Для начала - команду {}""".format(update.message.chat.first_name, '/start')
+	logging.info('Пользователь {} нажал команду /start'.format(update.message.chat.username))
 	update.message.reply_text(bottext)
 
 def chat(bot, update):
