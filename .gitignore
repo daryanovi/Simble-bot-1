@@ -1,0 +1,4 @@
+*.log
+dashabot.py
+settings.py
+__pycache__/
